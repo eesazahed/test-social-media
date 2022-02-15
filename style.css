@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+header {
+	background: black;
+	color: white;
+	display: flex;
+	justify-content: flex-end;
+}
+
+body, textarea {
+	font: 1rem 'Roboto', sans-serif;
+}
+
+textarea {
+	margin: 1%;
+	padding: 1%;
+	resize: none;
+	width: 300px;
+}
+
+#editing {
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.preview {
+	border-radius: 50%;
+}
+
+.prevUser, .status {
+    margin: 1%;
+}
+
+.post {
+	text-align: left;
+    background: #f8f8f8;
+    width: 400px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#loggedIn {
+	display: flex;
+	align-items: center;
+	margin-right: 3%;
+}
+
+#linkToEditProfile {
+	color: white;
+	margin-right: 3%;
+	margin-left: 3%;
+	border-right: 1px solid darkgrey;
+	border-left: 1px solid darkgrey;
+	padding: 1%;
+}
+
+#linkToEditProfile:hover {
+	text-decoration: underline;
+	color: lightblue;
+}
+
+#loggedIn img {
+	margin: 1%;
+}
+
+.updates hr {
+	width: 25%;
+}
+
+.usernameDisplay {
+    color: #383838;
+}
+
+.postDisplay, .timeDisplay {
+    margin-left: 1%;
+}
+
+.timeDisplay {
+    font: 0.8rem sans-serif;
+    color: grey;
+}
+
+#addmoreposts {
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

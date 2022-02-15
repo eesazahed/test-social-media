@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .editContainer {
+            padding-top: 1%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body style="display: flex;">
+    <div class="editContainer">
+        <div id="a" style="display: none;"></div>
+        <main id="editing"> <a href="index.html">Go back</a>
+            <h1>Edit profile</h1>
+            <form class="local-form">
+                <p>Enter a username: </p>
+                <input type="text" id="text" maxlength="12" minlength="4" autofocus required>
+                <br>
+                <p>Status: </p>
+                <input type="text" id="status" minlength="5" value="using my computer" required>
+                <br>
+                <p>Password: </p>
+                <input type="password" id="pass" minlength="8" required>
+                <input type="submit" value="Submit">
+            </form>
+            <br>
+            <br>
+            <div class="file-select">
+                <p>Choose a profile picture:</p>
+                <input type="file" accept=".jpg, .png">
+            </div>
+            <br>
+        </main>
+        <div class="profile">
+            <p>ME:</p> <img src="profile-pic.jpg" class="preview" height="200" width="200" alt=" Loading image... ">
+            <br>
+            <br> <span class="prevUser">User</span> | <i><span class="status">...</span></i>
+            <br>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

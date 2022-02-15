@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hello!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="margin: 0%; text-align: center;">
+    <form class="local-form" style="display: none;">
+        <input type="file">
+    </form>
+    <header>
+        <div id="pass" style="display: none;"></div>
+        <p id="loggedIn"> <img src="profile-pic.jpg" class="preview" width="50" height="50" alt="Me">
+            <span class="prevUser">null</span> <a href="edit.html" id="linkToEditProfile">Edit Profile</a>
+            <i><b><span class="status">null</span></b></i>
+        </p>
+    </header>
+    <main id="mainfeed">
+        <h2><span id="currentUser"></span>'s personal page</h2>
+        <h2><b>¯\_(ツ)_/¯</b></h2>
+        <h3>Status:
+            <i><b><span class="status"></span></b></i>
+        </h3>
+        <textarea name="newfeed" id="newfeed" cols="15" rows="5"></textarea>
+        <br>
+        <br>
+        <button onclick="submitForm();">Submit</button>
+        <button onclick='localStorage.removeItem("FOLLOW-EESAZAHED-ON-GITHUB-allposts"); location.reload();'>Clear
+            Feed</button>
+        <h3>My latest feed:</h3>
+        <div id="addmoreposts"></div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        if (localStorage.getItem("FOLLOW-EESAZAHED-ON-GITHUB-pass") === null) {
+            document.querySelector("#mainfeed").style.display = "none";
+        }
+        if (localStorage.getItem("FOLLOW-EESAZAHED-ON-GITHUB-allposts") !== null) {
+            allPosts.innerHTML = localStorage.getItem("FOLLOW-EESAZAHED-ON-GITHUB-allposts");
+        }
+    </script>
+</body>
+
+</html>
